@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/fondo.jpg); /* Cambia esta ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+}
+
+header {
+    background-color: rgba(140, 122, 230, 0.9); /* Fondo semitransparente para el encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Asegura que el texto en el encabezado esté centrado */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Ajusta el tamaño de la fuente del título si es necesario */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center; /* Centra los subtítulos */
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #6a5acd; /* Cambia el color del borde cuando está en foco */
+}
+
+button {
+    background-color: fuchsia; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95%; /* Ancho del botón */
+}
+
+button:hover {
+    background-color: #d5006d; /* Cambia el color al pasar el ratón por encima */
+}
+
+.mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333; /* Color del mensaje */
+}
+
+.mensaje.error {
+    color: red; /* Mensaje de error (talla no disponible) */
+}
+
+.mensaje.success {
+    color: green; /* Mensaje de éxito (talla disponible) */
+}
+
+.registro {
+    margin-top: 30px;
+    text-align: center; /* Centra el texto en la sección de registro */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(140, 122, 230, 0.9); /* Fondo semitransparente para el pie de página */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para la nueva sección de Información (pestañas) */
+.informacion h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.informacion nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.informacion nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.informacion nav ul li a {
+    text-decoration: none;
+    color: #8c7ae6;
+    font-size: 1.2em;
+    border: 2px solid #8c7ae6;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.informacion nav ul li a:hover {
+    background-color: #8c7ae6;
+    color: white;
+}
